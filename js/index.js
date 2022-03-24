@@ -31,8 +31,8 @@ function createGrid(gridSize) {
     for (let rowCol = 0; rowCol < gridSize ** 2; rowCol++) {
       let gridCell = document.createElement("div");
       Object.assign(gridCell.style, {
-        height : `${(size / gridSize)}px`,
-        width : `${(size / gridSize)}px`
+        height : `${(size / gridSize) - 2}px`,
+        width : `${(size / gridSize) - 2}px`
       });
       gridCell.classList.add("gridBox");
       gridCell.addEventListener('mouseover', changeGridColor)

@@ -7,7 +7,8 @@ let size = parseInt(window.getComputedStyle(gridContainer).width, 10);
 function changeGridColor(e) {
    let color = `rgb(${[0, 0, 0]})`
     Object.assign(e.target.style, {
-     backgroundColor : color    
+     backgroundColor : color,
+     opacity : 0.7
    });
 }
 
